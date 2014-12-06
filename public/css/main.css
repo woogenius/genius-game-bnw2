@@ -1,0 +1,333 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	background-attachment: fixed;
+	font-family: "NanumBarunGothicLight","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.wrap{
+  padding:120px 0;
+  font-size:25px;
+  color:#888;
+  width:300px;
+  margin:0 auto;
+  text-align:center;
+}
+
+.taCenter {
+	text-align: center;
+}
+
+.displayNone {
+	display: none;
+}
+
+.bigFont {
+	font-size: 4em;
+	color: #d9534f;
+}
+
+/*Fix Bootstrap Default*/
+div.navbar.navbar-default {
+	background-color: transparent;
+}
+
+.panel {
+	background-color: transparent;
+}
+
+.container {
+	margin-bottom: 50px;
+}
+
+.btn-primary {
+	color: #ffffff;
+	background-color: #d9534f;
+}
+
+.progress-bar {
+	background-color: #2C628C;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+	color: #ffffff;
+	background-color: #d9534f;
+	border-color: rgba(0,0,0,0);
+}
+
+input-group-btn>.btn:hover {
+	z-index: 1;
+}
+
+.popover  {
+	background: #d9534f !important;
+	color: #ffffff;
+}
+.popover.top>.arrow:after {
+	border-top-color:#d9534f;
+}
+
+.glyphicon-refresh-animate {
+    -animation: spin 1s infinite linear;
+    -webkit-animation: spin2 1s infinite linear;
+    font-size: 3em;
+    margin-top: 30px;
+    color: #d9534f;
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+
+#notiModal > div.modal-dialog > div > div.modal-body > div.wrap {
+	width: 100%;
+	color: #FFFFFF;
+}
+
+.alert-success {
+	background-color: #178C3F;
+}
+
+.table-striped>tbody>tr:nth-child(odd) {
+	background-color: transparent;
+}
+
+/*for each Field*/
+.field {
+	height: 280px;
+}
+
+/*for Status Field*/
+.statusField .round{
+	font-size: 4em;
+	margin-bottom: 10px;
+	margin-top: -10px;
+}
+
+.statusField .score {
+	font-size: 3em;
+	margin-bottom: 10px;
+	margin-top: -10px;
+}
+
+.statusField .playerName {
+	margin-top: 0px;
+}
+
+.statusField .playerMe {
+	color : #d9534f;
+}
+
+.statusField .playerMe:after {
+	content : '(me)';
+}
+
+/*for Counter Field*/
+.counterField > div {
+	padding: 0px;
+}
+
+.counterField .panel-body {
+	height: 86%;
+}
+
+.counterPointField .pointBoard {
+	margin: 0px auto;
+	width: 100%;
+	min-width: 80px;
+	height: 100%;
+}
+
+.counterPointField .pointBoard td {
+	vertical-align: middle !important;
+}
+
+.counterPointField tbody > tr.primary > td {
+	background-color: #2C628C;;
+}
+
+.counterColorField {
+	position: relative;
+}
+
+.counterColorField .counterColor {
+	font-size: 3em;
+	width: 100%;
+	height: 100%;
+	line-height: 211px;
+}
+
+.counterColorField .colorBlack {
+	color: #ebebeb;
+	background-color: #333;
+}
+
+.counterColorField .colorBlack:before {
+	content: "흑";
+}
+
+.counterColorField .colorWhite {
+	color: #333;
+	background-color: #DDD;
+}
+
+.counterColorField .colorWhite:before {
+	content: "백";
+}
+
+.counterColorField .colorNone {
+	color: #ebebeb;
+	background-color: #2b3e50;
+}
+
+.counterColorField .colorNone:before {
+	content: "?";
+}
+
+.counterColorField .counterPrevColor {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.counterColorField .counterPrevColor div {
+	padding: 0px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.counterColorField .counterPrevColor label {
+	color: #888;
+}
+
+
+.counterColorField .counterPrevColor div:before {
+	content: "";
+}
+
+/*for Input Field*/
+.inputField .attackOrder {
+	font-size: 4em;
+	margin-top: -10px;
+}
+
+.inputField .attackOrder .first:before {
+	content: "선공";
+}
+
+.inputField .attackOrder .last:before {
+	content: "후공";
+}
+
+.inputField .remainingTime {
+	font-size: 4em;
+	margin-top: -10px;
+}
+
+.inputField .remainingTime:after {
+	content: "s";
+}
+
+.inputField input {
+	height: 51px;
+}
+
+.inputField .wrapProgress{
+	position: relative;
+}
+
+.inputField .remainingPoint{
+	position: absolute; top : 0px; left : 2px;
+}
+
+.inputField .progress {
+	width: 99%;
+	height: 30px;
+	margin: 0px auto 8px auto;
+	background-color: #2b3e50;
+	/*position: absolute; */
+}
+
+.inputField .remainingPoint {
+	height: 30px;
+	line-height: 30px;
+}
+
+/*for Chatting Field*/
+.chattingField .panel-body {
+	position: relative;
+	height: 86%;
+	padding: 0px;
+}
+
+.chattingField .form-group {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	margin-bottom: 0px;
+}
+
+.chattingField #chattingMessages {
+	height: 200px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.chattingField #chattingMessages ul {
+	list-style-type: none;
+	text-align: left;
+	padding: 0px 30px;
+	width: 100%;
+}
+
+.chattingField #chattingMessages ul li span{
+	display: inline-block;
+	position: relative;
+	background: #2C628C;
+	padding: 5px;
+	margin: 5px;
+	border-radius: 3px;
+}
+.chattingField #chattingMessages ul li span:before {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(213, 121, 40, 0);
+	border-right-color: #2C628C;
+	border-width: 5px;
+	margin-top: -5px;
+}
+
+.chattingField #chattingMessages ul li.myMessage {
+	border-left-color: #2C628C;
+	text-align: right;
+}
+
+.chattingField #chattingMessages ul li.myMessage span:before {
+	left: 100%;
+	border-right-color: transparent;
+	border-left-color: #2C628C;
+
+}
+
+/*for Notification*/
+#notification {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	z-index: 5;
+	margin-bottom: 0px;
+}
+
