@@ -1,4 +1,4 @@
-var socket = io();
+var socket = io(location.hostname, {path: location.pathname + 'socket.io/'});
 
 (function (gc) {
 	var bindInputAndBtn = function (inputEl, btnEl, fn) {
